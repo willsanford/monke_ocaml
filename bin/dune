@@ -1,0 +1,4 @@
+(executable
+ (public_name monkee_ocaml)
+ (name main)
+ (libraries monkee_ocaml))

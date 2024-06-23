@@ -1,0 +1,348 @@
+# dune exec monkee_ocaml -w
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/wsanf/code/monkee_ocaml
+# Auto-detected concurrency: 12
+$ /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlc.opt -config > /run/user/1000/dune_74b625_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin =
+#      External "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlmklib.opt"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" : "/home/wsanf/code/monkee_ocaml/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External
+#          "/nix/store/c22sfjnrig14d3azw1dyjz2dcyvp9dpr-ocaml4.14.1-findlib-1.9.6/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/ca0j62acnzbnz9lahw8j4ry6y4zc6mj8-ocaml4.14.1-ocamlformat-0.26.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/09h2f413r6wy8bkjk6lfa1gkpz7033jw-dune-3.11.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/2jrf0i0pm802xwbfrk6wbpcwgpqifcx3-ocaml4.14.1-ocaml-lsp-server-1.16.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/js4i4fcsc1s51yhgiwc16w5ds0gjqpv9-ocaml4.14.1-utop-2.13.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/d00n3xz3b6am7sz3j42a0abpmwsdxkik-ocaml4.14.1-lambda-term-3.3.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/5p7ymfrr928gcn27ny2i0wzcp7lmiav7-ocaml4.14.1-zed-3.2.3/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/cjn1x4cifb1zfz6lf685isslcklk986s-ocaml-react-1.2.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/8nzw29nhsavyiy18ff4i5dkc222wkm8w-ocaml4.14.1-result-1.5/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/9v30q26091k0s3y5mglgl9hhdn0hsjbh-ocaml4.14.1-uchar-0.0.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/9fxiw31nf136alhnp94wiz0c411d5inr-ocaml4.14.1-uutf-1.0.3/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/69p5fkp5jaiak6dlj964pjwwj7k17q8x-ocaml4.14.1-uucp-15.0.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/lv1bk72yiglrbqg822x0gxzw1xigf1id-ocaml4.14.1-uuseg-15.0.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/3721ak8mw5nrjbjizillikwx9k4895dj-ocaml4.14.1-lwt_log-1.1.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/45fs7g8q34f9cfs9g9rys65vq9yk4sgk-ocaml4.14.1-lwt-5.7.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/9m5gc1s0zch2xvshsphrcv7d8fyjf9ia-ocaml4.14.1-ocplib-endian-1.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/ydq1il666rs6ys1q44y9mxabr7bla2vz-ocaml4.14.1-lwt_react-1.1.5/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/xvwgh8jvjnqq3rb0xx614kfqlimh5vra-ocaml4.14.1-mew_vi-0.5.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/hx2rb4aqbchbsjjjzjs680rx6l32ri4v-ocaml4.14.1-mew-0.1.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/n1ak1wgrl5qi5n9hqj84ps5ia9bakw3n-ocaml4.14.1-trie-1.0.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/7042g8jrd8hg88zfp7pjsib2a146r918-ocaml4.14.1-logs-0.7.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/875jsm2dvr8lw3c1michzrkpw8gmy44w-ocaml4.14.1-xdg-3.11.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/xjvy6xsbfx9igpf60db2fsd8a5jw27xh-ocaml4.14.1-ocamlformat-rpc-lib-0.26.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/v3l7fqbz1frbxs1zag856f9n0y9awlap-ocaml4.14.1-csexp-1.5.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/63q2nqj8pvb7g6aw5q5n3fj4lfq8sh60-ocaml4.14.1-sexplib0-0.16.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/gmrhsr68kpgcl1sr6lq776pjj7q88pdh-ocaml4.14.1-yojson-2.1.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/bxqhwxqqarw9iw2ng9igzm7ip4pz8n4k-ocaml4.14.1-seq-0.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/c22sfjnrig14d3azw1dyjz2dcyvp9dpr-ocaml4.14.1-findlib-1.9.6/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/ca0j62acnzbnz9lahw8j4ry6y4zc6mj8-ocaml4.14.1-ocamlformat-0.26.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/09h2f413r6wy8bkjk6lfa1gkpz7033jw-dune-3.11.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/2jrf0i0pm802xwbfrk6wbpcwgpqifcx3-ocaml4.14.1-ocaml-lsp-server-1.16.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/js4i4fcsc1s51yhgiwc16w5ds0gjqpv9-ocaml4.14.1-utop-2.13.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/d00n3xz3b6am7sz3j42a0abpmwsdxkik-ocaml4.14.1-lambda-term-3.3.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/5p7ymfrr928gcn27ny2i0wzcp7lmiav7-ocaml4.14.1-zed-3.2.3/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/cjn1x4cifb1zfz6lf685isslcklk986s-ocaml-react-1.2.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/8nzw29nhsavyiy18ff4i5dkc222wkm8w-ocaml4.14.1-result-1.5/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/9v30q26091k0s3y5mglgl9hhdn0hsjbh-ocaml4.14.1-uchar-0.0.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/9fxiw31nf136alhnp94wiz0c411d5inr-ocaml4.14.1-uutf-1.0.3/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/69p5fkp5jaiak6dlj964pjwwj7k17q8x-ocaml4.14.1-uucp-15.0.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/lv1bk72yiglrbqg822x0gxzw1xigf1id-ocaml4.14.1-uuseg-15.0.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/3721ak8mw5nrjbjizillikwx9k4895dj-ocaml4.14.1-lwt_log-1.1.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/45fs7g8q34f9cfs9g9rys65vq9yk4sgk-ocaml4.14.1-lwt-5.7.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/9m5gc1s0zch2xvshsphrcv7d8fyjf9ia-ocaml4.14.1-ocplib-endian-1.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/ydq1il666rs6ys1q44y9mxabr7bla2vz-ocaml4.14.1-lwt_react-1.1.5/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/xvwgh8jvjnqq3rb0xx614kfqlimh5vra-ocaml4.14.1-mew_vi-0.5.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/hx2rb4aqbchbsjjjzjs680rx6l32ri4v-ocaml4.14.1-mew-0.1.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/n1ak1wgrl5qi5n9hqj84ps5ia9bakw3n-ocaml4.14.1-trie-1.0.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/7042g8jrd8hg88zfp7pjsib2a146r918-ocaml4.14.1-logs-0.7.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/875jsm2dvr8lw3c1michzrkpw8gmy44w-ocaml4.14.1-xdg-3.11.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/xjvy6xsbfx9igpf60db2fsd8a5jw27xh-ocaml4.14.1-ocamlformat-rpc-lib-0.26.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/v3l7fqbz1frbxs1zag856f9n0y9awlap-ocaml4.14.1-csexp-1.5.2/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/63q2nqj8pvb7g6aw5q5n3fj4lfq8sh60-ocaml4.14.1-sexplib0-0.16.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/gmrhsr68kpgcl1sr6lq776pjj7q88pdh-ocaml4.14.1-yojson-2.1.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/bxqhwxqqarw9iw2ng9igzm7ip4pz8n4k-ocaml4.14.1-seq-0.1/lib/ocaml/4.14.1/site-lib/"
+#      ; External
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/lib"
+#      ]
+#  ; ocaml_config =
+#      { version = "4.14.1"
+#      ; standard_library_default =
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/lib/ocaml"
+#      ; standard_library =
+#          "/nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-unknown-linux-gnu"
+#      ; target = "x86_64-unknown-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  ; instrument_with = []
+#  }
+# Attempted to add watch to non-existent directory /nix/profile.
+# Attempted to add watch to non-existent directory
+# /home/wsanf/.local/state/nix/profile.
+# Attempted to add watch to non-existent directory /nix/profile.
+# Attempted to add watch to non-existent directory
+# /home/wsanf/.local/state/nix/profile.
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 63, characters 0-29:
+> 63 | type program = statement list
+>      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 34 [unused-type-declaration]): unused type program.
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 142, characters 10-13:
+> 142 |   | Error msg -> print_endline "asdas" 
+>                 ^^^
+> Error (warning 27 [unused-var-strict]): unused variable msg.
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 99, characters 20-52:
+> 99 |     many @@ choice [let_statement_parser, whitespace] 
+>                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> Error: This expression has type 'a * 'b
+>        but an expression was expected of type 'c t
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 99, characters 42-52:
+> 99 |     many @@ choice [let_statement_parser; whitespace] 
+>                                                ^^^^^^^^^^
+> Error: This expression has type string t
+>        but an expression was expected of type statement t
+>        Type string is not compatible with type statement 
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 99, characters 40-50:
+> 99 |   many @@ choice [let_statement_parser; whitespace] 
+>                                              ^^^^^^^^^^
+> Error: This expression has type string t
+>        but an expression was expected of type statement t
+>        Type string is not compatible with type statement 
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", lines 66-67, characters 27-38:
+> 66 | ...........................function
+> 67 |   | Integer i -> Printf.sprintf "%d" i
+> Error (warning 8 [partial-match]): this pattern-matching is not exhaustive.
+> Here is an example of a case that is not matched:
+> Identifier _
+> File "bin/main.ml", line 44, characters 2-28:
+> 44 |   | Identifier of identifier
+>        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): unused constructor Identifier.
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 48, characters 4-14:
+> 48 | let ident_expr i = Identifier i;;
+>          ^^^^^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value ident_expr.
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 88, characters 30-47:
+> 88 |     choice [ integer_literal; identifier_parser ] in
+>                                    ^^^^^^^^^^^^^^^^^
+> Error: This expression has type identifier t
+>        but an expression was expected of type expression t
+>        Type identifier is not compatible with type expression 
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 91, characters 30-47:
+> 91 |     choice [ integer_literal; identifier_parser ] in
+>                                    ^^^^^^^^^^^^^^^^^
+> Error: This expression has type identifier t
+>        but an expression was expected of type expression t
+>        Type identifier is not compatible with type expression 
+[2]
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf -I lib/.monkee_ocaml.objs/byte -I lib/.monkee_ocaml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/dpk6p6z5zwl1jfn7hwkgyfwaj7zdpg77-ocaml-4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf/bigstringaf.cmxa -I /nix/store/kycwks0zdk6nh6v32fns4p731lfqrr0v-ocaml4.14.1-bigstringaf-0.9.0/lib/ocaml/4.14.1/site-lib/bigstringaf /nix/store/f373p4hyav3mphph8rwb2q0z9vs2rgmw-ocaml4.14.1-angstrom-0.15.0/lib/ocaml/4.14.1/site-lib/angstrom/angstrom.cmxa lib/monkee_ocaml.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
